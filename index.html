@@ -90,14 +90,36 @@
                     <style>
                       .callinks {
                         padding-top: 2em;
+                        list-style: none;
+                        padding-left: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0.75em;
                       }
                       .callinks li {
-                        background: #ffd;
+                        display: inline-flex;
+                      }
+                      .callinks li a {
                         display: inline-block;
-                        padding: 0.5em;
+                        width: 13em;
+                        padding: 0.625em 1.25rem;
+                        font-weight: 500;
+                        font-size: 1.0625rem;
+                        line-height: 1.3;
                         text-align: center;
-                        font-weight: bold;
-                        width: 12em;
+                        text-decoration: none;
+                        color: #c5050c;
+                        background: #fff;
+                        border: 2px solid #c5050c;
+                        border-radius: 0.5rem;
+                        box-shadow: 0 1.5px 4px rgba(0,0,0,.24), 0 1.5px 6px rgba(0,0,0,.12);
+                        transition: all 0.25s ease-out;
+                      }
+                      .callinks li a:hover,
+                      .callinks li a:focus {
+                        color: #fff;
+                        background: #c5050c;
+                        transition: all 0.25s ease-in-out;
                       }
                     </style>
                     <ul class="callinks">
